@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIMS Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="app-header-left">
+          <div class="logo-circle">N</div>
+          <div>
+            <h1 class="app-title">NIMS School Assistant</h1>
+            <p class="app-subtitle">New Ideal Model Schools, Jalingo.</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <section class="chat-panel" aria-label="Chat conversation">
+          <div id="chat-log" class="chat-log" aria-live="polite">
+            <div class="message-row assistant">
+              <div class="avatar">N</div>
+              <div class="bubble">
+                <p>Welcome to NIMS. Ask any question about the school.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="input-panel" aria-label="Message input">
+          <form id="chat-form" class="chat-form" autocomplete="off">
+            <textarea
+              id="user-input"
+              class="chat-input"
+              rows="1"
+              placeholder="Ask a question about NIMS (fees, admissions, classes, contact, etc.)"
+            ></textarea>
+            <button type="submit" class="send-button" aria-label="Send message">
+              <span>Send</span>
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
